@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">科学计算器</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_transform">TransformActivity</string>
+    <string name="report">提示：</string>
+    <string name="welcome">欢迎使用！</string>
+    <string name="calculator">计算器</string>
+    <string name="transform1">单位转换</string>
+    <string name="transform2">进制转换</string>
+    <string name="republic">重置</string>
+    <string name="transform">转换</string>
+    <string name="error">输入错误</string>
+    <string name="yes">确认</string>
+</resources>

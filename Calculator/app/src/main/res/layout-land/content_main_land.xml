@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.calculator.Land_MainActivity">
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:cursorVisible="false"
+        android:text="0"
+        />
+    <!-- 默认显示字符串0 -->
+    <TextView
+        android:id="@+id/mem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:text="0"
+        />
+
+    <TableLayout
+        android:layout_marginLeft="-20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/T"
+        android:layout_alignParentStart="true">
+        <TableRow>
+
+            <Button
+                android:id="@+id/seven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:text="7" />
+            <Button
+                android:id="@+id/eight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="8"/>
+            <Button
+                android:id="@+id/nine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="9"/>
+            <Button
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="+"/>
+            <Button
+                android:id="@+id/c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="C"/>
+            <!-- 退格键 -->
+            <Button android:id="@+id/bksp"
+
+                android:text="B"
+                android:layout_width="65sp"
+                android:layout_height="wrap_content"
+                />
+            <Button android:id="@+id/sin"
+                android:text="sin"
+                android:layout_width="65sp"
+                android:layout_height="wrap_content"
+                />
+
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="4"/>
+            <Button
+                android:id="@+id/five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"/>
+            <Button
+                android:id="@+id/six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="6"/>
+            <Button
+                android:id="@+id/sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="-"/>
+            <Button
+                android:id="@+id/ln"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ln"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/mc"
+
+                android:text="MC"/>
+            <Button android:id="@+id/cos"
+                android:text="cos"
+                android:layout_width="65sp"
+                android:layout_height="wrap_content"
+                />
+
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="1"/>
+            <Button
+                android:id="@+id/two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="2"/>
+            <Button
+                android:id="@+id/three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"/>
+            <Button
+                android:id="@+id/mul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="×"/>
+            <Button
+                android:id="@+id/log"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="log"/>
+            <Button
+                android:id="@+id/factorial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="n!"/>
+            <Button android:id="@+id/tan"
+                android:text="tan"
+                android:layout_width="65sp"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/equal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="="/>
+
+            <Button
+                android:id="@+id/zero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="0"/>
+            <Button
+                android:id="@+id/point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="."/>
+            <Button
+                android:id="@+id/divide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:text="÷"/>
+            <!-- 左括号 -->
+            <Button android:id="@+id/left"
+                android:text="("
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <!-- 右括号 -->
+            <Button android:id="@+id/right"
+                android:text=")"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+        </TableRow>
+
+    </TableLayout>
+    <!-- 用于提示，告诉用户如何使用计算器的一些功能等 -->
+    <TextView android:id="@+id/T"
+        android:layout_width="45sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="262sp"
+        android:text="@string/report"
+        />
+    <TextView android:id="@+id/tip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="262sp"
+        android:layout_marginLeft="40sp"
+        android:text="@string/welcome"
+        />
+
+</RelativeLayout>
